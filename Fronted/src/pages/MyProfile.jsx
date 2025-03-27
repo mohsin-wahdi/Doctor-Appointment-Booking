@@ -124,11 +124,21 @@ const MyProfile = () => {
             )}
           </div>
         </div>
-        <div >
+        <div>
           {isEdit ? (
-            <button className="border-primary border py-2 px-8 rounded-2xl" onClick={() => setIsEdit(false)}>Save</button>
+            <button
+              className=" cursor-pointer border-primary  border py-2 px-8 rounded-2xl"
+              onClick={() => setIsEdit(false)}
+            >
+              Save
+            </button>
           ) : (
-            <button className="border-primary border py-2 px-8 rounded-2xl" onClick={() => setIsEdit(true)}>Edit</button>
+            <button
+              className="border-primary cursor-pointer border py-2 px-8 rounded-2xl"
+              onClick={() => setIsEdit(true)}
+            >
+              Edit
+            </button>
           )}
         </div>
       </div>
