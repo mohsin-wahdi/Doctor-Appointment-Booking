@@ -134,7 +134,7 @@ const MyProfile = () => {
             </button>
           ) : (
             <button
-              className="border-primary  hover:bg-primary border-primary cursor-pointer border py-2 px-8 rounded-2xl"
+              className="border-primary hover:bg-primary border-primary cursor-pointer border py-2 px-8 rounded-2xl"
               onClick={() => setIsEdit(true)}
             >
               Edit
