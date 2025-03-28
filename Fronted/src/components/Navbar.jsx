@@ -6,7 +6,7 @@ const Navbar = () => {
   // Navigate the button using useNavigate
   const navigate = useNavigate();
   // cheack if the user is lggedin or not
-  const [showMenu, setShowMenu] = useState(false);
+  const [showMenu, setShowMenu] = useState(true);
   const [token, setToken] = useState(true);
   return (
     <div className="flex items-center justify-between text-sm py-4 mb-5 border-b  border-gray-400">
@@ -44,7 +44,12 @@ const Navbar = () => {
               src={assets.profile_pic}
               alt="Profile-pic"
             />
-            <img className="w-2.5" src={assets.dropdown_icon} alt="" />
+            <img
+              className="w-2.5"
+              src={assets.dropdown_icon}
+              onClick={() => setShowMenu()}
+              alt=""
+            />
             <div className="absolute top-0 right-0 pt-14 text-base font-medium z-20 text-gray-600  hidden group-hover:block">
               <div className="min-w-48 bg-stone-100 rounded flex flex-col gap-4 p-4">
                 <p
