@@ -127,14 +127,14 @@ const MyProfile = () => {
         <div>
           {isEdit ? (
             <button
-              className=" cursor-pointer border-primary  border py-2 px-8 rounded-2xl"
+              className=" cursor-pointer hover:bg-primary border-primary  border py-2 px-8 rounded-2xl"
               onClick={() => setIsEdit(false)}
             >
               Save
             </button>
           ) : (
             <button
-              className="border-primary cursor-pointer border py-2 px-8 rounded-2xl"
+              className="border-primary  hover:bg-primary border-primary cursor-pointer border py-2 px-8 rounded-2xl"
               onClick={() => setIsEdit(true)}
             >
               Edit
