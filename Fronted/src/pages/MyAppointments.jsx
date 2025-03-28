@@ -17,19 +17,24 @@ const MyAppointments = () => {
               <img className="w-32 bg-indigo-50" src={item.image} alt="" />
             </div>
             <div className="flex-1 text-sm text-zinc-600">
-              <p>{item.name}</p>
+              <p className="text-neutral-600 font-semibold">{item.name}</p>
               <p>{item.speciality}</p>
-              <p>Address:</p>
+              <p className="font-semibold">Address:</p>
               <p>{item.address.line1}</p>
               <p>{item.address.line2}</p>
               <p>
-                <span>Date & Time:</span> 26 Apr 2025 | 01:30 PM
+                <span className="font-semibold">Date & Time:</span> 26 Apr 2025
+                | 01:30 PM
               </p>
             </div>
             <div></div>
-            <div>
-              <button>Pay Online</button>
-              <button>Cancel Appointment</button>
+            <div className="flex flex-col gap-2 justify-end">
+              <button className="border hover:bg-primary cursor-pointer py-2 px-6 text-sm hover:text-white rounded text-zinc-400 border-zinc-400 transition-all duration-300 ">
+                Pay Online
+              </button>
+              <button className="border text-zinc-400 rounded hover:bg-red-500 hover:text-white cursor-pointer py-2 px-6 text-sm transition-all duration-300 border-zinc-400">
+                Cancel Appointment
+              </button>
             </div>
           </div>
         ))}
