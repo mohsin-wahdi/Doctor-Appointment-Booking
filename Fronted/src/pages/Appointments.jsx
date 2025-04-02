@@ -44,6 +44,7 @@ const Appointments = () => {
               </button>
             </div>
             {/* -----Doctors About-- */}
+                {/* -----Start-- */}
             <div>
               <p className="flex items-center gap-1 text-sm font-medium text-gray-900 mt-3  ">
                 About <img src={assets.info_icon} alt="Info_Icon" />
