@@ -43,7 +43,7 @@ const Appointments = () => {
                 {doctorsInfo.experience}
               </button>
             </div>
-            {/* -----Doctors About-- */}
+            {/* -----Doctors Abouts-- */}
                 {/* -----Start-- */}
             <div>
               <p className="flex items-center gap-1 text-sm font-medium text-gray-900 mt-3  ">
