@@ -19,7 +19,7 @@ const Appointments = () => {
   return (
     doctorsInfo && (
       <div>
-        {/* --------Doctors details -------- */}
+        {/* --------Doctors Details -------- */}
         <div className="flex flex-col sm:flex-row gap-4 ">
           <div>
             <img
